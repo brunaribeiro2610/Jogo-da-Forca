@@ -1,0 +1,19 @@
+:root{
+  --bg:#0f1724;
+  --card:#04060a;
+  --accent:#ef4444;
+  --text:#e5e7eb;
+}
+body{margin:0;background:var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;padding:2rem;font-family:Arial, sans-serif}
+.container{width:100%;max-width:900px;text-align:center}
+.masked{font-size:2rem;letter-spacing:0.5rem;margin-bottom:1rem}
+.keyboard{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center}
+.key{padding:0.5rem 0.8rem;border-radius:6px;background:#111827;border:1px solid rgb(247, 241, 241);cursor:pointer;color:var(--text)}
+.key.disabled{opacity:0.4;cursor:not-allowed}
+.message{height:2rem;margin-top:1rem}
+#reset{margin-top:1rem;padding:0.6rem 1rem;border-radius:8px;border:1px solid var(--accent);background:none;color:var(--accent);cursor:pointer}
+svg{width:220px;height:280px;margin:0 auto}
+svg .part{stroke:var(--accent);stroke-width:3;fill:none;opacity:0;transition:opacity 0.5s ease}
+svg .part.show{opacity:1}
+.message.win{color:limegreen;font-weight:700}
+.message.lose{color:var(--accent);font-weight:700}
